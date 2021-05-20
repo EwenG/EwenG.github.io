@@ -5,13 +5,14 @@
               (25))
              (clojure-mode
               (5 8 1))
-             (clj-data.el
+             (clj-data\.el
               (0 0 1)))
             "A development environment for Clojure and Clojurescript" tar nil])
  (clj-data .
            [(0 0 1)
             ((emacs
-              (27.1))
+              (27 1))
              (ivy
               (0 13 0)))
-            "An emacs library for using/printing/analysing/browsing elisp data in a Clojure-like way" tar nil]))
+            "A library to handle data in a Clojure-like way" tar nil]))
+
