@@ -12,7 +12,7 @@
               (25))
              (clojure-mode
               (5 8 1))
-             (clj-data\.el
+             (clj-data
               (0 0 1)))
             "A development environment for Clojure and Clojurescript" tar nil]))
 
