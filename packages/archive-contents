@@ -1,18 +1,20 @@
 (1
  (clj-data .
-           [(0 0 1)
+           [(0 0 2)
             ((emacs
               (27 1))
              (ivy
               (0 13 0)))
             "A library to handle data in a Clojure-like way" tar nil])
  (replique .
-           [(0 0 17)
+           [(0 0 18)
             ((emacs
               (25))
              (clojure-mode
               (5 8 1))
+             (ivy
+              (0 10 0))
              (clj-data
-              (0 0 1)))
+              (0 0 2)))
             "A development environment for Clojure and Clojurescript" tar nil]))
 

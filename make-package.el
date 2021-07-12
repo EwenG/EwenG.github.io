@@ -39,8 +39,8 @@
     (shell-command (format "rm ~/%s.tar"lib-name))))
 
 (comment
- (make-package "replique.el" "replique" "0.0.18")
- (make-package "clj-data.el" "clj-data" "0.0.2")
+ (make-package "replique.el" "replique" "0.0.19")
+ (make-package "clj-data.el" "clj-data" "0.0.3")
  )
 
 ;; package-upload-file
