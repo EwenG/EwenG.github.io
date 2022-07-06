@@ -31,15 +31,17 @@
 (defun make-package (project-directory lib-name version)
   (let* ((default-directory "~/")
          (lib-name (format "%s-%s" lib-name version)))
+    (print (format "COPYFILE_DISABLE=1 tar -cvf %s.tar --exclude=\"%s/.*\" --exclude=\"%s/packages\" %s/"
+                                   lib-name lib-name lib-name lib-name))
     (shell-command (format "cp -R %s %s" project-directory lib-name))
     (shell-command (format "COPYFILE_DISABLE=1 tar -cvf %s.tar --exclude=\"%s/.*\" --exclude=\"%s/packages\" %s/"
                            lib-name lib-name lib-name lib-name))
     (shell-command (format "rm -r ~/%s" lib-name))
     (package-upload-file (format "~/%s.tar" lib-name))
-    (shell-command (format "rm ~/%s.tar"lib-name))))
+    (shell-command (format "rm ~/%s.tar" lib-name))))
 
 (comment
- (make-package "replique.el" "replique" "0.0.19")
+ (make-package "replique.el" "replique" "1.1.0")
  (make-package "clj-data.el" "clj-data" "0.0.3")
  )
 

@@ -7,9 +7,9 @@
               (0 13 0)))
             "A library to handle data in a Clojure-like way" tar nil])
  (replique .
-           [(0 0 18)
+           [(1 0 0)
             ((emacs
-              (25))
+              (27))
              (clojure-mode
               (5 8 1))
              (ivy
